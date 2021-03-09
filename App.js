@@ -1,21 +1,42 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { createStackNavigator } from 'react-navigation-stack'
+import { createAppContainer } from 'react-navigation'
+import React, { useEffect } from 'react'
+import { StyleSheet, Text, View } from 'react-native'
+import dynamicLinks from '@react-native-firebase/dynamic-links'
+import IndexScreen from './src/screens/IndexScreen'
+import ShowScreen from './src/screens/ShowScreen'
+import { Provider } from './src/context/PagesContext'
 
-export default function App() {
+const navigator = createStackNavigator(
+  {
+    Index: IndexScreen,
+    Show: ShowScreen
+  },
+  {
+    initialRouteName: 'Index',
+    defaultNavigationOptions: {
+      title: 'Test'
+    }
+  }
+)
+const App = createAppContainer(navigator)
+
+export default () => {
+  // useEffect(() => {
+  //   dynamicLinks()
+  //     .getInitialLink()
+  //     .then(link => {
+  //       console.log(link)
+  //       // if (link.url === 'https://invertase.io/offer') {
+  //       //   // ...set initial route as offers screen
+  //       // }
+  //     });
+  // }, []);
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+    <Provider >
+      <App />
+    </Provider>
+  )
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+const styles = StyleSheet.create({})

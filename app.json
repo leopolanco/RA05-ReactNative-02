@@ -1,9 +1,9 @@
 {
-  "name": "Roberto",
-  "displayName": "Roberto",
+  "name": "Pages Mobile",
+  "displayName": "Pages Mobile",
   "expo": {
-    "name": "Roberto",
-    "slug": "Roberto",
+    "name": "Pages",
+    "slug": "Pages",
     "version": "1.0.0",
     "assetBundlePatterns": [
       "**/*"

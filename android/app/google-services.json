@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "561955745026",
+    "project_id": "rob-test-a493c",
+    "storage_bucket": "rob-test-a493c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:561955745026:android:1d8e9ce92f77813b60661b",
+        "android_client_info": {
+          "package_name": "com.roberto"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "561955745026-br5doil6b146cii4uegvcq189apmh7dt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.roberto",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "561955745026-87epjieq7s9tu0q6u6f5civsa2vk5ntr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5PGG7X3SXg1uCxT0oO3JCq8ssPwJcvHs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "561955745026-87epjieq7s9tu0q6u6f5civsa2vk5ntr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
